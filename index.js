@@ -1,7 +1,5 @@
 const multipleFaker = require("multiple-faker");
 
-// insert into users(col1,col2,col3) values (val1,val2,val3)
-
 const table = "users";
 const numRows = 25;
 const fields = ["first_name", "last_name", "job_title", "phone_number", "random_number"];
@@ -10,3 +8,13 @@ const attributes = {
   phone: ["phoneNumber"],
   random: ["number"]
 };
+
+const seedDataSQL = (table, fields, attributes) => {
+  const seed = ``;
+  seed += `insert into ${table} (`;
+  seed += fields.join(", ");
+  seed += `) values (`;
+  seed += `);`;
+};
+
+const generatedData = multipleFaker(numRows, attributes);
