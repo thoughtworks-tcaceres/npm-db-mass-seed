@@ -10,6 +10,13 @@
     "type": "git",
     "url": "https://github.com/tylercaceres/npm-db-mass-seed"
   },
+  "keywords": [
+    "SQL",
+    "database",
+    "generate",
+    "seed",
+    "insert"
+  ],
   "author": "Tyler Caceres",
   "license": "ISC",
   "dependencies": {
