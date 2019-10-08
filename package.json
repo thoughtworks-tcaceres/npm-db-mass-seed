@@ -1,0 +1,11 @@
+{
+  "name": "db-mass-seed",
+  "version": "1.0.0",
+  "description": "simple package to create the SQL needed to populate your database",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Tyler Caceres",
+  "license": "ISC"
+}
