@@ -1,5 +1,5 @@
 const tableName = "users";
-const numRows = 100;
+const numRows = 2;
 const fields = ["first_name", "last_name", "job_title", "phone_number", "random_number"];
 const attributes = [
   "name.firstName",
@@ -32,3 +32,5 @@ const generateSQLsyntax = (tableName, numRows, fields, attributes) => {
 };
 
 console.log(generateSQLsyntax(tableName, numRows, fields, attributes));
+
+module.export = generateSQLsyntax;

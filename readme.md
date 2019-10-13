@@ -1,62 +1,41 @@
 # npm-db-seed
 
-[![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.org/package/axios)
-[![build status](https://img.shields.io/travis/axios/axios.svg?style=flat-square)](https://travis-ci.org/axios/axios)
-[![code coverage](https://img.shields.io/coveralls/mzabriskie/axios.svg?style=flat-square)](https://coveralls.io/r/mzabriskie/axios)
-[![install size](https://packagephobia.now.sh/badge?p=axios)](https://packagephobia.now.sh/result?p=axios)
-[![npm downloads](https://img.shields.io/npm/dm/axios.svg?style=flat-square)](http://npm-stat.com/charts.html?package=axios)
-[![gitter chat](https://img.shields.io/gitter/room/mzabriskie/axios.svg?style=flat-square)](https://gitter.im/mzabriskie/axios)
-[![code helpers](https://www.codetriage.com/axios/axios/badges/users.svg)](https://www.codetriage.com/axios/axios)
-![license: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+---
 
-## Features
-
-- Make [XMLHttpRequests](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) from the browser
-- Make [http](http://nodejs.org/api/http.html) requests from node.js
-- Supports the [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) API
-- Intercept request and response
-- Transform request and response data
-- Cancel requests
-- Automatic transforms for JSON data
-- Client side support for protecting against [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
-
-## Browser Support
-
-| ![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Latest ✔                                                                                 | Latest ✔                                                                                    | Latest ✔                                                                                 | Latest ✔                                                                              | Latest ✔                                                                           | 11 ✔                                                                                                                         |
-
-[![Browser Matrix](https://saucelabs.com/open_sauce/build_matrix/axios.svg)](https://saucelabs.com/u/axios)
+Helps generate seed data for a SQL database using the [faker](https://www.npmjs.com/package/faker) library.
 
 ## Installing
 
-Using npm:
+---
 
-```bash
-$ npm install axios
+```
+$ npm install npm-db-seed
 ```
 
-Using bower:
+## Examples
 
-```bash
-$ bower install axios
+---
+
+### Example 1
+
+Note: the attributes variable is a string composed of the [faker](https://www.npmjs.com/package/faker) library's attribute and subattributes.
+
+E.g: if you wanted to use faker.name.firstName as a value, you would include "name.firstName".
+
+```js
+const dbSeed = require("mass-db-seed");
+
+const tableName = "users";
+const numRows = 100;
+const fields = ["first_name", "last_name", "job_title", "phone_number", "random_number"];
+const attributes = [
+  "name.firstName",
+  "name.lastName",
+  "name.jobTitle",
+  "phone.phoneNumber",
+  "random.number"
+];
 ```
-
-Using yarn:
-
-```bash
-$ yarn add axios
-```
-
-Using cdn:
-
-```html
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-```
-
-## Example
-
-### note: CommonJS usage
 
 In order to gain the TypeScript typings (for intellisense / autocomplete) while using CommonJS imports with `require()` use the following approach:
 

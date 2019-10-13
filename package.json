@@ -1,5 +1,5 @@
 {
-  "name": "db-mass-seed",
+  "name": "mass-db-seed",
   "version": "1.0.0",
   "description": "simple package to create the SQL needed to populate your database",
   "main": "index.js",
