@@ -5,10 +5,13 @@ const isValidTableName = (tableName) => {
 };
 
 const isValidNumRows = (numRows) => {
-  return Number.isInteger(numRows) ? true : false;
+  return Number.isInteger(numRows) && numRows > 0 ? true : false;
 };
 
 const isValidFields = (fields) => {
+  if (!Array.isArray(fields)) {
+    return false;
+  }
   for (let i = 0; i < fields.length; i++) {
     if (typeof fields[i] !== "string") {
       return false;
@@ -18,6 +21,9 @@ const isValidFields = (fields) => {
 };
 
 const isValidAttributes = (attributes) => {
+  if (!Array.isArray(attributes)) {
+    return false;
+  }
   for (let i = 0; i < attributes.length; i++) {
     if (!eval(`faker.${attributes[i]}`)) {
       return false;
@@ -59,4 +65,4 @@ module.exports = {
   isValidAttributes,
   seedStart,
   seedValues
-} = require("./helpers");
+};
