@@ -45,7 +45,7 @@ const seedValues = (numRows, attributes) => {
     queryString += "(";
     for (let j = 0; j < numAttributes; j++) {
       let value = eval(`faker.${attributes[j]}`)();
-      let extraChar = typeof value === "number" ? "" : '"';
+      let extraChar = typeof value === "number" ? "" : "'";
       queryString += extraChar;
       queryString += value;
       queryString += extraChar;
