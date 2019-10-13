@@ -36,7 +36,7 @@ massDbSeed(tableName, numRows, fields, attributes);
 
 ```sql
 //Example output:
-INSERT INTO users (first_name, last_name, job_title, random_number) VALUES ("Marjolaine", "Labadie", "Customer Security Designer", 60841), ("Kelton", "Vandervort", "Dynamic Group Agent", 68686)
+INSERT INTO users (first_name, last_name, job_title, random_number) VALUES ('Giovanna', 'Leannon', 'Central Intranet Officer', 76167), ('Brianne', 'Nitzsche', 'Regional Web Executive', 94287)
 ```
 
 ## References
