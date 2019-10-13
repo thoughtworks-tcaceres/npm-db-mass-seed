@@ -22,4 +22,4 @@ const generateSQLsyntax = (tableName, numRows, fields, attributes) => {
   }
 };
 
-module.export = generateSQLsyntax;
+module.exports = generateSQLsyntax;
