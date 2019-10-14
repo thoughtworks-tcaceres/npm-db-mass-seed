@@ -1,6 +1,6 @@
 # mass-db-seed
 
-Helps generate a seed data for a SQL database using the [faker](https://www.npmjs.com/package/faker) library.
+Helps generate seed data for a SQL database using the [faker](https://www.npmjs.com/package/faker) library.
 
 ## Installing
 
