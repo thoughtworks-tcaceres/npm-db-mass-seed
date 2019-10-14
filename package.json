@@ -1,6 +1,6 @@
 {
   "name": "mass-db-seed",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "simple package to create the SQL needed to populate your database",
   "main": "index.js",
   "scripts": {
