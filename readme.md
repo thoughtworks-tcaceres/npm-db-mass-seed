@@ -7,7 +7,7 @@ Helps generate seed data for a SQL database using the [faker](https://www.npmjs.
 ---
 
 ```
-$ npm install mass-db-seed
+npm install mass-db-seed
 ```
 
 ## Example
@@ -31,7 +31,7 @@ const attributes = ["name.firstName", "name.lastName", "name.jobTitle", "random.
 // attribute.subAttribute taken from the faker library
 
 massDbSeed(tableName, numRows, fields, attributes);
-// returns the string and console log's the string
+// returns the string and console logs the string
 ```
 
 ```sql
