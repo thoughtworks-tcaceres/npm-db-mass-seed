@@ -8,6 +8,7 @@ Helps generate seed data for a SQL database using the [faker](https://www.npmjs.
 
 ```
 npm install mass-db-seed
+yarn add mass-db-seed
 ```
 
 ## Example
