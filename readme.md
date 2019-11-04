@@ -22,17 +22,17 @@ E.g: if you wanted to use faker.name.firstName as a value, you would include "na
 ```js
 const massDbSeed = require("mass-db-seed");
 
-const tableName = "users";
 // name of the database table
-const numRows = 2;
+const tableName = "users";
 // number of rows to generate info for
-const fields = ["first_name", "last_name", "job_title", "random_number"];
+const numRows = 2;
 // name of the database fields (columns)
-const attributes = ["name.firstName", "name.lastName", "name.jobTitle", "random.number"];
+const fields = ["first_name", "last_name", "job_title", "random_number"];
 // attribute.subAttribute taken from the faker library
+const attributes = ["name.firstName", "name.lastName", "name.jobTitle", "random.number"];
 
-massDbSeed(tableName, numRows, fields, attributes);
 // returns the string and console logs the string
+massDbSeed(tableName, numRows, fields, attributes);
 ```
 
 ```sql
