@@ -15,7 +15,13 @@
     "database",
     "generate",
     "seed",
-    "insert"
+    "insert",
+    "faker",
+    "mass",
+    "seeding",
+    "inserting",
+    "dummy",
+    "data"
   ],
   "author": "Tyler Caceres",
   "license": "ISC",
