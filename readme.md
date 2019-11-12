@@ -45,3 +45,8 @@ INSERT INTO users (first_name, last_name, job_title, random_number) VALUES ('Gio
 ---
 
 ### [Faker Library](https://www.npmjs.com/package/faker)
+
+## TO DO
+---
+* create CI/CD
+* more examples
